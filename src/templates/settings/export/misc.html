@@ -1,16 +1,30 @@
 <script type="text/html" id="templates/settings/export/misc.html">
-  <div class="export-panel-misc">
-    <div class="export-panel-header export-info">
-      Less usual export formats. Feedback and improvements welcome.
+    <div class="export-panel-misc">
+        <div class="export-panel-header export-info">
+            Less usual export formats. Feedback and improvements welcome.
+        </div>
+        <div class="export-panel-section">
+            <div style="padding-bottom: 5px">
+                <span class="highlight">Export as C File for LIM: </span>
+                <span class="export-info">
+                    C file with frame rendered as array.
+                </span>
+                <div>
+                    <input id="c-header-checkbox" class="c-header-checkbox checkbox-fix" type="checkbox" />
+                    <label for="c-header-checkbox"
+                    title="Check to export as .h file"
+                    rel="tooltip"
+                    data-placement="top">Header File</label>
+                </div>
+                <div>
+                    <input id="c-progmem-checkbox" class="c-progmem-checkbox checkbox-fix" type="checkbox" />
+                    <label for="c-progmem-checkbox"
+                    title="Check to export with the array set as PROGMEM. For arduino"
+                    rel="tooltip"
+                    data-placement="top">PROGMEM Export</label>
+                </div>
+            </div>
+            <button type="button" class="button button-primary c-download-button">Download C file</button>
+        </div>
     </div>
-    <div class="export-panel-section">
-      <div style="padding-bottom: 5px">
-        <span class="highlight">Export as C File: </span>
-        <span class="export-info">
-          C file with frame rendered as array.
-        </span>
-      </div>
-      <button type="button" class="button button-primary c-download-button">Download C file</button>
-    </div>
-  </div>
 </script>
